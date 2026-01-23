@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*height: 100%;*/
+    box-sizing: border-box;
+    
+}
+
+.background{
+    background: url(/img/6c8495455b0b4db29a213c9a5241c71f.jpg) center/ cover no-repeat ;
+    height: 100vh;
+}
+
+/*HEARDER*/
+header{
+    padding: 15px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(227, 170, 34, 0.868);
+    border-radius: 20px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+li a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/*header*/
+
+/*section_one*/
+.section_one{
+    margin: 0 auto;
+    height: 80vh;
+    width: 80%;
+    padding: 40px 0;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.form{
+    padding: 30px;
+    height: 50vh;
+    width: 80vw;
+    border-radius: 20px;
+    background-color: rgba(55, 25, 126, 0.412);
+    color:white;
+}
+
+.form h3 {
+    margin-left: 10px;
+}
+.form p{
+    width: 50%;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.form .login{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.form .login label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+}
+
+.form .login input{
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin-top: 5px;
+    outline:none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    height: 35px;
+    width: 120px;
+    background-color: rgba(80, 80, 189, 0.758);
+    color: white;
+    border-radius: 10px;
+    margin: 99px 50px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.form .line{
+    height: 360px;
+    width: 3px;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    right: 40%;
+    top: 20%;
+}
+
+.form .text{
+    position: absolute;
+    min-width: 50%;
+    top: 18%;
+    left: 60%;
+    color: wheat;
+    
+}
+
+.form .text h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*section_one*/
+
+/*footer*/
+footer{
+    padding: 25px;
+    background-color: rgb(32, 30, 6);
+}
+
+.contato{
+    display: flex;
+    color: wheat;
+}
+
+.icones{
+    width: 20px;
+}
+
+.text_footer{
+    width: 70%;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.contato_footer{
+    padding: 0 10px;
+}
