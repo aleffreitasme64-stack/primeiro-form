@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background: url(/img/8a23d7b6ff0bb3dd071745cdb0721cec.jpg) center/ cover no-repeat ;
+    height: 100vh;
+}
+
+/*header_cadastro*/
+
+header{
+    height: 60px;
+    padding: 10px;
+    
+}
+
+.nav{
+    display:  flex;
+    justify-content: space-between;
+
+}
+
+.nav .img{
+    background-color: transparent;
+    display: block;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.nav li a{
+    text-decoration: none;
+    padding: 8px;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.bar{
+    display: none;
+}
+
+/*header_cadastro fim*/
+
+
+/*section_one cadastro*/
+
+.section_one{
+    width: 100%;
+}
+
+.section_one .conteiner{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    
+}
+
+.conteiner .form{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: rgba(69, 42, 6, 0.287);
+    height: 0%;
+    margin: 20px auto;
+}
+
+.login{
+    width: 49%;
+    display: block;
+    height: 100%;
+}
+
+.login h2{
+    width: 80%;
+    margin: 0 auto;
+    color: wheat;
+}
+
+.login p{
+    width: 80%;
+    margin: 0 auto;
+    color: wheat;
+}
+
+.login label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    margin: 5px 40px;
+    width: 80%;
+    display: block;
+    color: wheat;
+    height: 3%;
+}
+
+.login input{
+    display: block;
+    margin: 5px 40px;
+    outline: none;
+    height:4%;
+    min-height: 25px;
+    width: 79%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.botao{
+    text-align: center;
+    margin: 10px 0;
+    height: 10%;
+}
+
+button{
+    display: inline-block;
+    min-height: 40px;
+    max-height: 60%;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: beige;
+}
+
+.form .text{
+    width: 49%;
+    display: flex;
+}
+
+.text h2{
+    text-align: center;
+    color: wheat;
+}
+
+.text p{
+    width: 90%;
+    margin: 10px auto;
+    color:wheat;
+}
+.text .line{
+    height: 300px;
+    width: 8px;
+    background-color: rgba(245, 222, 179, 0.782);
+    right: 100px;
+    margin: 50px 0px;
+}
+
+/*section_one cadastro fim*/
+
+/*foother*/
+
+footer{
+    padding: 15px;
+    background-color: rgb(61, 33, 3);
+    display: flex;
+}
+
+.contato{
+    display: flex;
+    color: whitesmoke;
+}
+.contato_footer{
+    padding: 0 10px;
+}
+
+.text_footer{
+    padding: 0 10px;
+    text-align: justify;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .background{
+        height:auto ;
+    }
+
+    .bar{
+        display: block;
+    }
+
+/*section_one cadastro*/
+    .conteiner{
+        flex-direction: column;
+    }
+
+    .form{
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.758);
+    }
+
+    .form .login {
+        width: 100%;
+        display: inline-block;
+    }  
+
+    .login h2{
+        width: 80%;
+        margin: 0 10px;
+        color: wheat;
+    }
+
+    .form .login p{
+        width: 90%;
+        margin-left: 10px
+    }
+
+    .form .login input{
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .form .login label{
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .form .text{
+        position: static;
+        margin-top: 0px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .form .text h3{
+        font-size: 22px;
+        margin-top: 0px;
+    }
+
+    .form .text p{
+        font-size: 16px;
+        margin: 0px 0px;
+    }
+
+    .text .line{
+        display: none;
+    }
+
+    button{
+    height: 35px;
+    width: 120px;
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: bolder;
+    margin: 20px 5%;
+    display: inline-block;
+}
+
+/*nav responsivo*/
+header{
+    height: 70px;
+    position: relative;
+}
+
+.nav{
+    display: none;
+}
+
+.nav-bar {
+    display: inline-block;
+}
+
+.bar{
+    right: 10%;
+    position: absolute;
+}
+
+.nav-bar.ativo{
+    right: 0px;
+}
+
+.nav-bar {
+    transition: 1s;
+    z-index: 1;
+    display: block;
+    width: 30%;
+    position: fixed;
+    right: -250px;
+    top: 0px;
+    height: 100vh;
+    text-align: center;
+    background: url(/img/3bdd30ded77ef28c1c060f2156f9ac73.jpg);
+}
+
+.bi-justify{
+    color: wheat;
+    margin-top: 20px;
+    cursor: pointer;
+    right: 0;
+}
+
+.overlay{
+    position: fixed;
+    inset: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    z-index: 0;
+
+}
+
+.overlay.ativo{
+    opacity: 1;
+    pointer-events: all;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.close{
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: wheat;
+    font-size: 22px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.nav-bar ul{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.nav-bar li {
+    margin-top: 30px;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+}
+
+@media (max-width: 420px){
+
+    /*footer*/
+    footer{
+        background-color: rgb(61, 33, 3);
+        display: grid;
+        padding: 10px;
+    }
+
+    .text_footer{
+        order: 1;
+        width: 90%;
+    }
+
+    .contato{
+        margin:  10px;
+        order: 2;
+        width: 90%;
+    }
+
+}
+
